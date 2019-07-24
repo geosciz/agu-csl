@@ -1,11 +1,11 @@
 &time_control
- run_days           =  395
- start_year         =  2004,
- start_month        =  11,
+ run_days           =  4745
+ start_year         =  1993,
+ start_month        =  01,
  start_day          =  01,
  start_hour         =  00,
- end_year           =  2005,
- end_month          =  12,
+ end_year           =  2006,
+ end_month          =  01,
  end_day            =  01,
  end_hour           =  00,
  interval_seconds   =  21600
@@ -39,15 +39,17 @@
  mp_physics         = 8,
  ra_lw_physics      = 3,
  ra_sw_physics      = 3,
- radt               = 15,
+ radt               = 25,
  sf_sfclay_physics  = 2,
  sf_surface_physics = 2,
  bl_pbl_physics     = 2,
  bldt               = 0,
- cu_physics         = 1,
+ cu_physics         = 2,
  cudt               = 0,
  bucket_mm          = 100
  bucket_j           = 1.e9
+ sf_lake_physics    = 1,
+ use_lakedepth      = 1,
 /
 
 &dynamics
