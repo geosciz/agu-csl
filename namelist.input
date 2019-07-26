@@ -15,20 +15,20 @@
 /
 
 &domains
- time_step               = 150
+ time_step               = 90,
  max_dom                 = 1
- e_we                    = 154,
- e_sn                    = 101,
+ e_we                    = 160,
+ e_sn                    = 160,
  e_vert                  = 51,
- dx                      = 48918.0898,
- dy                      = 48918.0898,
+ dx                      = 27794.3691,
+ dy                      = 27794.3691,
  grid_id                 = 1,
  parent_id               = 1,
  i_parent_start          = 1,
  j_parent_start          = 1,
  parent_grid_ratio       = 1,
  parent_time_step_ratio  = 1,
- feedback                = 1
+ feedback                = 0
  smooth_option           = 0
  num_metgrid_levels      = 27
  num_metgrid_soil_levels = 4
@@ -63,7 +63,7 @@
  spec_bdy_width =  10
  spec_zone      =  1
  relax_zone     =  9
- specified      = .true.,
+ specified      = .true.
  spec_exp       =  0.33
 /
 
