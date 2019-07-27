@@ -1,7 +1,7 @@
 &share
  max_dom                      =  1
  start_date                   = '1993-01-01_00:00:00',
- end_date                     = '2006-01-01_00:00:00',
+ end_date                     = '1993-02-01_00:00:00',
  interval_seconds             =  21600
  opt_output_from_geogrid_path = '/home/zhangc/WPS/output_geogrid/'
 /
@@ -13,14 +13,14 @@
  j_parent_start    =  1,
  e_we              =  160,
  e_sn              =  160,
- dx                =  0.25
- dy                =  0.25
- map_proj          = 'lat-lon'
+ dx                =  25000
+ dy                =  25000
+ map_proj          = 'lambert'
  ref_lat           =  50
  ref_lon           =  50
- stand_lon         = -50
- pole_lat          =  40
- pole_lon          =  180
+ truelat1          =  60
+ truelat2          =  30
+ stand_lon         =  50
  geog_data_path    = '/home/zhangc/data/i/WPS_GEOG/'
 /
 
