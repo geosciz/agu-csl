@@ -1,11 +1,11 @@
 &time_control
- run_days           =  365
+ run_days           =  31
  start_year         =  1993,
  start_month        =  01,
  start_day          =  01,
  start_hour         =  00,
- end_year           =  1994,
- end_month          =  01,
+ end_year           =  1993,
+ end_month          =  02,
  end_day            =  01,
  end_hour           =  00,
  interval_seconds   =  21600
@@ -15,7 +15,7 @@
 /
 
 &domains
- time_step               = 90,
+ time_step               = 150,
  max_dom                 = 1
  e_we                    = 160,
  e_sn                    = 160,
@@ -34,18 +34,20 @@
 /
 
 &physics
- mp_physics         = 6,
+ mp_physics         = 8,
  ra_lw_physics      = 3,
  ra_sw_physics      = 3,
- radt               = 30,
- sf_sfclay_physics  = 1,
+ radt               = 25,
+ sf_sfclay_physics  = 2,
  sf_surface_physics = 2,
- bl_pbl_physics     = 1,
+ bl_pbl_physics     = 2,
  bldt               = 0,
- cu_physics         = 1,
- cudt               = 5,
+ cu_physics         = 2,
+ cudt               = 0,
  bucket_mm          = 100
  bucket_j           = 1.e9
+ sf_lake_physics    = 1,
+ use_lakedepth      = 1,
 /
 
 &dynamics
@@ -61,7 +63,4 @@
  relax_zone     =  9
  specified      = .true.
  spec_exp       =  0.33
-/
-
-&namelist_quilt
 /
