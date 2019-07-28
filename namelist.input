@@ -1,11 +1,11 @@
 &time_control
- run_days           =  31
+ run_days           =  4745
  start_year         =  1993,
  start_month        =  01,
  start_day          =  01,
  start_hour         =  00,
- end_year           =  1993,
- end_month          =  02,
+ end_year           =  2006,
+ end_month          =  01,
  end_day            =  01,
  end_hour           =  00,
  interval_seconds   =  21600
@@ -17,8 +17,8 @@
 &domains
  time_step               = 150,
  max_dom                 = 1
- e_we                    = 160,
- e_sn                    = 160,
+ e_we                    = 120,
+ e_sn                    = 120,
  e_vert                  = 51,
  dx                      = 25000,
  dy                      = 25000,
@@ -63,4 +63,7 @@
  relax_zone     =  9
  specified      = .true.
  spec_exp       =  0.33
+/
+
+&namelist_quilt
 /
