@@ -1,21 +1,24 @@
 &time_control
- run_days           =  4745
+ run_days           =  31
  start_year         =  1993,
  start_month        =  01,
  start_day          =  01,
  start_hour         =  00,
- end_year           =  2006,
- end_month          =  01,
+ end_year           =  1993,
+ end_month          =  02,
  end_day            =  01,
  end_hour           =  00,
  interval_seconds   =  21600
  input_from_file    = .true.,
- history_interval_h =  6,
+ history_interval   =  360,
  frames_per_outfile =  1,
+ auxinput4_inname   = 'wrflowinp_d<domain>'
+ auxinput4_interval =  360,
+ io_form_auxinput4  =  2
 /
 
 &domains
- time_step               = 150,
+ time_step               = 60,
  max_dom                 = 1
  e_we                    = 120,
  e_sn                    = 120,
@@ -34,16 +37,19 @@
 /
 
 &physics
- mp_physics         = 8,
+ mp_physics         = 6,
  ra_lw_physics      = 3,
  ra_sw_physics      = 3,
- radt               = 25,
- sf_sfclay_physics  = 2,
+ radt               = 30,
+ sf_sfclay_physics  = 1,
  sf_surface_physics = 2,
- bl_pbl_physics     = 2,
+ bl_pbl_physics     = 1,
  bldt               = 0,
- cu_physics         = 2,
- cudt               = 0,
+ cu_physics         = 1,
+ cudt               = 5,
+ sst_update         = 1,
+ tmn_update         = 1,
+ sst_skin           = 1,
  bucket_mm          = 100
  bucket_j           = 1.e9
  sf_lake_physics    = 1,
