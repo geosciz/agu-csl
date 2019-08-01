@@ -18,7 +18,7 @@
 /
 
 &domains
- time_step               = 60,
+ time_step               = 150,
  max_dom                 = 1
  e_we                    = 120,
  e_sn                    = 120,
