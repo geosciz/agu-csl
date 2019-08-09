@@ -1,16 +1,18 @@
 &time_control
- run_days           =  4745
- start_year         =  1993,
- start_month        =  01,
+ run_days           =  31
+ start_year         =  1999,
+ start_month        =  11,
  start_day          =  01,
  start_hour         =  00,
- end_year           =  2006,
- end_month          =  01,
- end_day            =  01,
+ end_year           =  1999,
+ end_month          =  11,
+ end_day            =  31,
  end_hour           =  00,
  interval_seconds   =  21600
  history_interval   =  360,
  frames_per_outfile =  1,
+ restart            = .false.
+ restart_interval   =  1440
  auxinput1_inname   = '/home/zhangc/WPS/output_metgrid/run_csl_20thc_93-05/met_em.d<domain>.<date>'
  auxinput4_inname   = 'wrflowinp_d<domain>'
  auxinput4_interval =  360,
