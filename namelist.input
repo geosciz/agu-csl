@@ -1,23 +1,23 @@
 &time_control
- run_days                =  4745
- start_year              =  1999,
- start_month             =  01,
- start_day               =  01,
- start_hour              =  00,
- end_year                =  2002,
- end_month               =  01,
- end_day                 =  01,
- end_hour                =  00,
- interval_seconds        =  21600
- history_interval        =  360,
- frames_per_outfile      =  1,
- restart                 = .true.
- restart_interval        =  525600
- override_restart_timers = .true.
- auxinput1_inname        = '/home/zhangc/WPS/output_metgrid/run_csl_20thc_93-05/met_em.d<domain>.<date>'
- auxinput4_inname        = 'wrflowinp_d<domain>'
- auxinput4_interval      =  360,
- io_form_auxinput4       =  2
+ run_days             =  4745
+ start_year           =  1999,
+ start_month          =  01,
+ start_day            =  01,
+ start_hour           =  00,
+ end_year             =  2006,
+ end_month            =  01,
+ end_day              =  01,
+ end_hour             =  00,
+ interval_seconds     =  21600
+ history_interval     =  360,
+ frames_per_outfile   =  1,
+ restart              = .true.
+ restart_interval     =  525600
+ write_hist_at_0h_rst = .true.
+ auxinput1_inname     = '/home/zhangc/WPS/output_metgrid/run_csl_20thc_93-05/met_em.d<domain>.<date>'
+ auxinput4_inname     = 'wrflowinp_d<domain>'
+ auxinput4_interval   =  360,
+ io_form_auxinput4    =  2
 /
 
 &domains
