@@ -1,6 +1,6 @@
 &time_control
- run_days             =  4745
- start_year           =  2002,
+ run_days             =  730
+ start_year           =  2004,
  start_month          =  01,
  start_day            =  01,
  start_hour           =  00,
