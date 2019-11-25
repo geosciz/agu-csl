@@ -1,46 +1,57 @@
 &time_control
  run_days             =  365
- start_year           =  2004,
- start_month          =  01,
- start_day            =  01,
+ start_year           =  1993,
+ start_month          =  02,
+ start_day            =  05,
  start_hour           =  00,
- end_year             =  2005,
+ end_year             =  1994,
  end_month            =  01,
  end_day              =  01,
  end_hour             =  00,
  interval_seconds     =  21600
  history_interval     =  360,
  frames_per_outfile   =  1,
- restart              = .false.
+ restart              = .true.
  restart_interval     =  10080
  write_hist_at_0h_rst = .true.
  auxinput1_inname     = '/home/zhangc/WPS/output_metgrid/run_csl/met_em.d<domain>.<date>'
- auxinput4_inname     = 'wrflowinp_d<domain>'
  io_form_auxinput4    =  2
+ auxinput4_inname     = 'wrflowinp_d<domain>'
+ auxinput4_interval   =  360,
  output_diagnostics   =  1
  io_form_auxhist3     =  2
  auxhist3_interval    =  1440,
- auxinput4_interval   =  360,
  frames_per_auxhist3  =  1,
 /
 
 &domains
- time_step               = 150
- max_dom                 = 1
- e_we                    = 120,
- e_sn                    = 120,
- e_vert                  = 51,
- dx                      = 25000,
- dy                      = 25000,
- grid_id                 = 1,
- parent_id               = 1,
- i_parent_start          = 1,
- j_parent_start          = 1,
- parent_grid_ratio       = 1,
- parent_time_step_ratio  = 1,
- num_metgrid_levels      = 27
- num_metgrid_soil_levels = 4
- p_top_requested         = 1000
+ time_step               =  150
+ max_dom                 =  1
+ s_we                    =  1,
+ e_we                    =  120,
+ s_sn                    =  1,
+ e_sn                    =  120,
+ s_vert                  =  1,
+ e_vert                  =  51,
+ dx                      =  27794.3691,
+ dy                      =  27794.3691,
+ grid_id                 =  1,
+ parent_id               =  1,
+ i_parent_start          =  1,
+ j_parent_start          =  1,
+ parent_grid_ratio       =  1,
+ parent_time_step_ratio  =  1,
+ num_metgrid_levels      =  27
+ num_metgrid_soil_levels =  4
+ p_top_requested         =  1000
+ use_adaptive_time_step  = .true.
+ step_to_output_time     = .true.
+ target_cfl              =  1.2,
+ max_step_increase_pct   =  5,
+ starting_time_step      =  150,
+ max_time_step           =  200,
+ min_time_step           =  100,
+ adaptation_domain       =  1
 /
 
 &physics
