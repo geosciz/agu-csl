@@ -1,8 +1,8 @@
 &share
  wrf_core                     = 'ARW'
  max_dom                      =  1
- start_date                   = '1993-01-01_00:00:00',
- end_date                     = '1994-01-01_00:00:00',
+ start_date                   = '2006-01-01_00:00:00',
+ end_date                     = '2007-01-01_00:00:00',
  interval_seconds             =  21600
  opt_output_from_geogrid_path = '/home/zhangc/WPS/output_geogrid/run_csl/'
 /
@@ -13,9 +13,9 @@
  i_parent_start    =  1,
  j_parent_start    =  1,
  s_we              =  1,
- e_we              =  120,
+ e_we              =  161,
  s_sn              =  1,
- e_sn              =  120,
+ e_sn              =  161,
  dx                =  0.25
  dy                =  0.25
  map_proj          = 'lat-lon'
@@ -28,6 +28,6 @@
 /
 
 &metgrid
- fg_name                      = '/home/zhangc/WPS/input_intermediate/run_csl/CCSM4_CMIP5_MOAR_BC_20THC'
+ fg_name                      = '/home/zhangc/WPS/input_intermediate/run_csl/CCSM4_CMIP5_MOAR_BC_RCP45'
  opt_output_from_metgrid_path = '/home/zhangc/WPS/output_metgrid/run_csl/'
 /

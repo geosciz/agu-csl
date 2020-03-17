@@ -1,17 +1,17 @@
 &time_control
  run_days             =  365
- start_year           =  1993,
- start_month          =  02,
- start_day            =  05,
+ start_year           =  2006,
+ start_month          =  01,
+ start_day            =  01,
  start_hour           =  00,
- end_year             =  1994,
+ end_year             =  2007,
  end_month            =  01,
  end_day              =  01,
  end_hour             =  00,
  interval_seconds     =  21600
  history_interval     =  360,
  frames_per_outfile   =  1,
- restart              = .true.
+ restart              = .false.
  restart_interval     =  10080
  write_hist_at_0h_rst = .true.
  auxinput1_inname     = '/home/zhangc/WPS/output_metgrid/run_csl/met_em.d<domain>.<date>'
@@ -28,9 +28,9 @@
  time_step               =  150
  max_dom                 =  1
  s_we                    =  1,
- e_we                    =  120,
+ e_we                    =  161,
  s_sn                    =  1,
- e_sn                    =  120,
+ e_sn                    =  161,
  s_vert                  =  1,
  e_vert                  =  51,
  dx                      =  27794.3691,
